@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-    <meta charset='UTF-8'>
+    <meta charset='UTF-8' />
+    <meta
+        name='viewport'
+        content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'
+    />
+    <meta http-equiv='X-UA-Compatible' content='ie=edge' />
     <title><%= htmlWebpackPlugin.options.title%></title>
 </head>
 <body>
@@ -14,8 +19,8 @@
                     With
                     Found, five key factors come together on your journey to reach your goals</p>
                 <div class='buttons-container '>
-                    <div class='select-button select-button-active'>
-                        <div class='inner-button-div' id='doctor-button'>
+                    <div id='doctor-button' class='select-button select-button-active'>
+                        <div class='inner-button-div'>
                             <div class='button-image-div'>
                                 <img class='button-img' width='15' height='15' id='doctor-img' alt='doctor'>
                             </div>
@@ -23,8 +28,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class='select-button'>
-                        <div class='inner-button-div' id='coach-button'>
+                    <div id='coach-button' class='select-button'>
+                        <div class='inner-button-div'>
                             <div class='button-image-div'>
                                 <img class='button-img' width='15' height='15' id='coach-img' alt='coach'>
                             </div>
@@ -32,8 +37,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class='select-button'>
-                        <div class='inner-button-div' id='app-button'>
+                    <div id='app-button' class='select-button'>
+                        <div class='inner-button-div'>
                             <div class='button-image-div'>
                                 <img class='button-img' width='15' height='15' id='app-img' alt='app'>
                             </div>
@@ -41,8 +46,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class='select-button'>
-                        <div class='inner-button-div' id='medication-button'>
+                    <div id='medication-button' class='select-button'>
+                        <div class='inner-button-div'>
                             <div class='button-image-div'>
                                 <img class='button-img' width='15' height='15' id='medication-img' alt='medication'>
                             </div>
@@ -50,8 +55,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class='select-button'>
-                        <div class='inner-button-div' id='community-button'>
+                    <div id='community-button' class='select-button'>
+                        <div class='inner-button-div'>
                             <div class='button-image-div'>
                                 <img class='button-img' width='15' height='15' id='community-img' alt='community'>
                             </div>
@@ -62,53 +67,62 @@
                 </div>
             </div>
         </div>
-        <svg class='card-background' viewBox='0 0 720 834' fill='none'
+        <svg class='card-background'
+             viewBox='0 0 720 834' fill='none'
              xmlns='http://www.w3.org/2000/svg'>
             <path
-                    d='M0.000486289 76.059L0.000976562 0H720L720 373.891C720 424.305 690.853 470.173 645.212 491.584L508.435 555.749C475.386 571.252 472.055 616.956 502.507 637.087L675.682 751.574C703.354 769.868 720 800.827 720 834H0.000976562L0.00123247 537.003C0.00127685 485.489 21.4747 436.306 59.2556 401.286L229.289 243.681C244.969 229.147 237.807 202.978 216.911 198.455L73.7332 167.461C30.7053 158.147 0.000202509 120.084 0.000486289 76.059Z'
-                    fill='#5A58CF'/>
+                d='M0.000486289 76.059L0.000976562 0H720L720 373.891C720 424.305 690.853 470.173 645.212 491.584L508.435 555.749C475.386 571.252 472.055 616.956 502.507 637.087L675.682 751.574C703.354 769.868 720 800.827 720 834H0.000976562L0.00123247 537.003C0.00127685 485.489 21.4747 436.306 59.2556 401.286L229.289 243.681C244.969 229.147 237.807 202.978 216.911 198.455L73.7332 167.461C30.7053 158.147 0.000202509 120.084 0.000486289 76.059Z'
+                fill='#5A58CF' />
         </svg>
     </section>
     <div class='cards-div'>
+        <svg class='desktop-hide card-background'
+             viewBox='0 0 720 834' fill='none'
+             xmlns='http://www.w3.org/2000/svg'
+             preserveAspectRatio='none'>
+            <path
+                d='M0.000486289 76.059L0.000976562 0H720L720 373.891C720 424.305 690.853 470.173 645.212 491.584L508.435 555.749C475.386 571.252 472.055 616.956 502.507 637.087L675.682 751.574C703.354 769.868 720 800.827 720 834H0.000976562L0.00123247 537.003C0.00127685 485.489 21.4747 436.306 59.2556 401.286L229.289 243.681C244.969 229.147 237.807 202.978 216.911 198.455L73.7332 167.461C30.7053 158.147 0.000202509 120.084 0.000486289 76.059Z'
+                fill='#5A58CF' />
+        </svg>
         <div class='cards-container'>
-            <div class='card' id='doctor-card'>
+            <div class='card  ' id='doctor-card'>
                 <div class='card-content'>
                     <div class='card-header'>
-                        <img alt='doctors' id='doctor-card-img' class='card-header-img'>
+                        <img width='25' height='25' alt='doctors' id='doctor-card-img' class='card-header-img'>
                         <h1 class='card-header-text'> Board-certified doctors</h1>
                     </div>
                     <div class='card-main'>
-                        <div class="main-item">
-                            <div class="item-svg">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738" stroke="#5A58CF"
-                                          stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <div class='main-item'>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#5A58CF'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
                                 </svg>
                             </div>
-                            <p class="item-text">Board-certified and specifically trained on weight loss
+                            <p class='item-text'>Board-certified and specifically trained on weight loss
                                 medication</p>
 
                         </div>
                         <div class='main-item'>
-                            <div class="item-svg">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738" stroke="#5A58CF"
-                                          stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#5A58CF'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
                                 </svg>
                             </div>
-                            <p class="item-text">Virtual appointments, no in-person office visits required</p>
+                            <p class='item-text'>Virtual appointments, no in-person office visits required</p>
                         </div>
                         <div class='main-item'>
-                            <div class="item-svg">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738" stroke="#5A58CF"
-                                          stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#5A58CF'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
                                 </svg>
                             </div>
-                            <p class="item-text">Found doctors customize the program to your specific needs</p>
+                            <p class='item-text'>Found doctors customize the program to your specific needs</p>
                         </div>
                     </div>
                     <div class='card-footer'>
@@ -120,41 +134,40 @@
             <div class='card' id='coach-card'>
                 <div class='card-content'>
                     <div class='card-header'>
-                        <img alt='coach' id='coach-card-img' class='card-header-img'>
-                        <h1 class='card-header-text'> Board-certified doctors</h1>
+                        <img width='25' height='25' alt='coach' id='coach-card-img' class='card-header-img'>
+                        <h1 class='card-header-text'>Personal health coach</h1>
                     </div>
                     <div class='card-main'>
-                        <div class="main-item">
-                            <div class="item-svg">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738" stroke="#5A58CF"
-                                          stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <div class='main-item'>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#408BFC'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
                                 </svg>
                             </div>
-                            <p class="item-text">Board-certified and specifically trained on weight loss
-                                medication</p>
+                            <p class='item-text'>Coaches tailor your movement and nutrition plan to fit your needs</p>
 
                         </div>
                         <div class='main-item'>
-                            <div class="item-svg">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738" stroke="#5A58CF"
-                                          stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#408BFC'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
                                 </svg>
                             </div>
-                            <p class="item-text">Virtual appointments, no in-person office visits required</p>
+                            <p class='item-text'>On-demand availability to answer all of your questions</p>
                         </div>
                         <div class='main-item'>
-                            <div class="item-svg">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738" stroke="#5A58CF"
-                                          stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#408BFC'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
                                 </svg>
                             </div>
-                            <p class="item-text">Found doctors customize the program to your specific needs</p>
+                            <p class='item-text'>Build sustainable habits with the help of your coach</p>
                         </div>
                     </div>
                     <div class='card-footer'>
@@ -166,41 +179,153 @@
             <div class='card' id='app-card'>
                 <div class='card-content'>
                     <div class='card-header'>
-                        <img alt='app' id='app-card-img' class='card-header-img'>
-                        <h1 class='card-header-text'> Board-certified doctors</h1>
+                        <img width='25' height='25' alt='app' id='app-card-img' class='card-header-img'>
+                        <h1 class='card-header-text'>Found mobile app</h1>
                     </div>
                     <div class='card-main'>
-                        <div class="main-item">
-                            <div class="item-svg">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738" stroke="#5A58CF"
-                                          stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <div class='main-item'>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#4F6258'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
                                 </svg>
                             </div>
-                            <p class="item-text">Board-certified and specifically trained on weight loss
-                                medication</p>
+                            <p class='item-text'>Keep track of your progress by logging your routines</p>
 
                         </div>
                         <div class='main-item'>
-                            <div class="item-svg">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738" stroke="#5A58CF"
-                                          stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#4F6258'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
                                 </svg>
                             </div>
-                            <p class="item-text">Virtual appointments, no in-person office visits required</p>
+                            <p class='item-text'>Coaches use logged routines to personalize your weight loss program</p>
                         </div>
                         <div class='main-item'>
-                            <div class="item-svg">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738" stroke="#5A58CF"
-                                          stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#4F6258'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
                                 </svg>
                             </div>
-                            <p class="item-text">Found doctors customize the program to your specific needs</p>
+                            <p class='item-text'>Integrates with Apple Health and Google Fit</p>
+                        </div>
+                    </div>
+                    <div class='card-footer'>
+                        <button class='continue-button'>Continue</button>
+                        <p class='starting-price'>Starting at $99/month</p>
+                    </div>
+                </div>
+            </div>
+            <div class='card card-active' id='medication-card'>
+                <div class='card-content'>
+                    <div class='card-header'>
+                        <img width='25' height='25' alt='app' id='medication-card-img' class='card-header-img'>
+                        <h1 class='card-header-text'>Prescription medication</h1>
+                    </div>
+                    <div class='card-main'>
+                        <p class='after-header-text'>Our medical team provides access to the widest set of prescriptions
+                            on the market, including (but not limited to):</p>
+                        <div class='medication-info'>
+                            <div class='info-cell'>
+                                <p class='cell-text'>Phentermine</p>
+                                <a href='#' class='medication-cell-link'>
+                                    <img class='medication-cell-img' alt='info'>
+                                </a>
+                            </div>
+                            <div class='info-cell'>
+                                <p class='cell-text'>GLP-1</p>
+                                <a href='#' class='medication-cell-link'>
+                                    <img class='medication-cell-img' alt='info'>
+                                </a>
+                            </div>
+                            <div class='info-cell'>
+                                <p class='cell-text'>Metformin</p>
+                                <a href='#' class='medication-cell-link'>
+                                    <img class='medication-cell-img' alt='info'>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='main-item'>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#ECC75C'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
+                                </svg>
+                            </div>
+                            <p class='item-text'>Work directly with our doctors to find the medication right for you</p>
+
+                        </div>
+                        <div class='main-item'>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#ECC75C'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
+                                </svg>
+                            </div>
+                            <p class='item-text'>Medication delivered to your door</p>
+                        </div>
+                        <div class='main-item'>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#ECC75C'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
+                                </svg>
+                            </div>
+                            <p class='item-text'>No insurance requirements</p>
+                        </div>
+                    </div>
+                    <div class='card-footer'>
+                        <button class='continue-button'>Continue</button>
+                        <p class='starting-price'>Starting at $99/month</p>
+                    </div>
+                </div>
+            </div>
+            <div class='card' id='community-card'>
+                <div class='card-content'>
+                    <div class='card-header'>
+                        <img width='25' height='25' alt='community' id='community-card-img' class='card-header-img'>
+                        <h1 class='card-header-text'>Supportive community</h1>
+                    </div>
+                    <div class='card-main'>
+                        <div class='main-item'>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#CF6D58'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
+                                </svg>
+                            </div>
+                            <p class='item-text'>Celebrate your journey with thousands of other members</p>
+
+                        </div>
+                        <div class='main-item'>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#CF6D58'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
+                                </svg>
+                            </div>
+                            <p class='item-text'>Share recipes, weight loss milestones, and roadblocks</p>
+                        </div>
+                        <div class='main-item'>
+                            <div class='item-svg'>
+                                <svg width='10' height='8' viewBox='0 0 10 8' fill='none'
+                                     xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.36377 4.24163L3.78801 6.66587L8.6365 1.81738' stroke='#CF6D58'
+                                          stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' />
+                                </svg>
+                            </div>
+                            <p class='item-text'>The Found team is actively involved to make sure you have the best
+                                experience</p>
                         </div>
                     </div>
                     <div class='card-footer'>

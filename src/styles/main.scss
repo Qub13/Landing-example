@@ -6,13 +6,21 @@
 body {
   font-family: GreycillffCF, sans-serif;
   font-weight: 400;
+  min-width: 375px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .main {
   height: 100%;
-  min-height: 700px;
+  min-height: 900px;
+  overflow: hidden;
+
 
   .first-section {
+    padding: 0 40px;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,12 +28,15 @@ body {
     height: 100%;
     width: 100%;
 
+    min-height: 600px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .description-div {
       width: 50%;
+      min-height: 300px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -147,45 +158,75 @@ body {
 
       opacity: 1;
 
-      #doctor-button {
-        background-color: $purple-light;
+      background-color: $purple-light;
 
-        .button-image-div {
-          background-color: $purple;
-        }
-      }
-
-      #coach-button {
+      &:nth-child(2) {
         background-color: $blue-light;
-
-        .button-image-div {
-          background-color: $blue;
-        }
       }
 
-      #app-button {
+      &:nth-child(3) {
         background-color: $green-light;
-
-        .button-image-div {
-          background-color: $green;
-        }
       }
 
-      #medication-button {
+      &:nth-child(4) {
         background-color: $orange-light;
-
-        .button-image-div {
-          background-color: $orange;
-        }
       }
 
-      #community-button {
+      &:nth-child(5) {
         background-color: $pink-light;
-
-        .button-image-div {
-          background-color: $pink;
-        }
       }
+
+      //#doctor-button {
+      //
+      //  background-color: $purple-light;
+      //
+      //
+      //  .button-image-div {
+      //    background-color: $purple;
+      //  }
+      //}
+      //
+      //#coach-button {
+      //
+      //  .inner-button-div {
+      //    background-color: $blue-light;
+      //  }
+      //
+      //  .button-image-div {
+      //    background-color: $blue;
+      //  }
+      //}
+      //
+      //#app-button {
+      //  .inner-button-div {
+      //    background-color: $green-light;
+      //  }
+      //
+      //  .button-image-div {
+      //    background-color: $green;
+      //  }
+      //}
+      //
+      //#medication-button {
+      //  .inner-button-div {
+      //    background-color: $orange-light;
+      //  }
+      //
+      //  .button-image-div {
+      //    background-color: $orange;
+      //  }
+      //}
+      //
+      //#community-button {
+      //
+      //  .inner-button-div {
+      //    background-color: $pink-light;
+      //  }
+      //
+      //  .button-image-div {
+      //    background-color: $pink;
+      //  }
+      //}
     }
 
 
@@ -196,6 +237,7 @@ body {
       height: 100%;
 
     }
+
   }
 
   .cards-div {
@@ -205,28 +247,17 @@ body {
     justify-content: center;
     position: relative;
     margin-left: auto;
-    //padding-top: 50%;
-    //padding: 10% 0;
-    padding: 200px 0;
+    padding: 190px 40px 120px 0;
 
 
   }
 
-
   .cards-container {
     position: relative;
-    //height: 100vh;
-    //width: 100%;
 
     display: flex;
     align-items: center;
     flex-direction: column;
-
-
-    //padding-top: 50%;
-
-    //transform: translateY(-25%);
-
 
     &::-webkit-scrollbar {
       display: none;
@@ -237,8 +268,6 @@ body {
       box-shadow: 0 20px 40px rgba(47, 47, 47, 0.2);
       border-radius: 10px;
       margin: auto;
-
-      //transform: translateY(-50%);
 
       padding: 28px;
 
@@ -273,6 +302,11 @@ body {
         row-gap: 12px;
         margin-bottom: 40px;
 
+        .after-header-text {
+          font-size: 18px;
+          margin-bottom: 14px;
+        }
+
         .main-item {
           display: flex;
           column-gap: 10px;
@@ -288,7 +322,6 @@ body {
           }
 
           .item-svg {
-            background-color: $purple-light;
             min-width: 16px;
             height: 16px;
             border-radius: 50%;
@@ -327,7 +360,235 @@ body {
     }
   }
 
+  #doctor-card {
+    .item-svg {
+      background-color: $purple-light;
+    }
+  }
 
+  #coach-card {
+    .item-svg {
+      background-color: $blue-light;
+    }
+  }
+
+  #app-card {
+    .item-svg {
+      background-color: $green-light;
+    }
+  }
+
+  #medication-card {
+    .item-svg {
+      background-color: $orange-light;
+    }
+
+    .medication-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 28px;
+
+      .medication-cell-img {
+        height: 11px;
+        width: 11px;
+      }
+
+      .info-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 8px;
+
+        padding: 12px;
+
+        background-color: $orange-light;
+
+        border-radius: 8px;
+
+        .cell-text {
+          font-size: 14px;
+          font-weight: 600;
+          color: $color-text-header;
+        }
+      }
+    }
+  }
+
+  #community-card {
+    .item-svg {
+      background-color: $pink-light;
+    }
+  }
+
+  .desktop-hide {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .main {
+    .first-section {
+      .description-div {
+        .description-content {
+          .description-header {
+            font-size: 50px;
+          }
+        }
+      }
+
+      .select-button {
+        .button-text {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .cards-container {
+      .card {
+        .card-header {
+          .card-header-text {
+            font-size: 22px;
+          }
+        }
+
+        .card-main {
+          .main-item {
+            .item-text {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .card-footer {
+          .starting-price {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 944px) {
+
+
+  .main {
+    position: relative;
+
+    .desktop-hide {
+      display: block;
+    }
+
+    .first-section {
+      position: relative;
+      flex-direction: column;
+      padding: 80px 24px 0 24px;
+      margin-bottom: 24px;
+      min-height: 400px;
+
+      .description-div {
+        width: 100%;
+      }
+
+      .card-background {
+        //position: absolute;
+        //bottom: -568px;
+
+        transform: rotate(90deg);
+        width: unset;
+
+        display: none;
+      }
+    }
+
+    .cards-div {
+      padding: 0 24px;
+      margin: 0;
+      width: 100%;
+
+      min-height: 500px;
+
+      .card-background {
+        position: absolute;
+        transform: rotate(90deg);
+        min-width: 500px;
+        max-width: 450px;
+        height: 100vw;
+        min-height: 375px;
+
+        transition: 0.3s;
+      }
+
+      .cards-container {
+        .card {
+          opacity: 0;
+          position: absolute;
+          margin-bottom: 0;
+          padding: 24px;
+
+          min-width: 324px;
+
+          transition: 0.3s;
+
+          .card-header {
+            padding-bottom: 16px;
+          }
+
+          .card-main {
+            margin-bottom: 32px;
+
+            .after-header-text {
+              font-size: 16px;
+            }
+          }
+
+          .card-header {
+            column-gap: 10px;
+          }
+        }
+
+        .card-active {
+          opacity: 1;
+          position: relative;
+          bottom: 0;
+          z-index: 3;
+        }
+      }
+
+
+    }
+
+    #medication-card {
+      .medication-info {
+        margin-bottom: 24px;
+
+        .info-cell {
+          padding: 8px;
+          column-gap: 4px;
+
+          .cell-text {
+            font-size: 12px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 404px) {
+  .main {
+    .cards-container {
+      .card {
+        .card-header {
+          .card-header-text {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
