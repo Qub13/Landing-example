@@ -2,6 +2,7 @@ const scrollOptions = { behavior: 'smooth', block: 'center', inline: 'center' };
 const svgBackground = document.querySelectorAll('.card-background path');
 
 
+export let isclickEventActive = false;
 export const handleAndStyleButtons = () => {
     const buttonActiveClass = 'select-button-active';
     const buttons = document.querySelectorAll('.buttons-container .select-button');
@@ -11,6 +12,7 @@ export const handleAndStyleButtons = () => {
 
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
+            isclickEventActive = true;
             if (button.classList.contains(buttonActiveClass)) return;
             buttons.forEach(button => button.classList.remove(buttonActiveClass));
             button.classList.add(buttonActiveClass);
@@ -55,6 +57,7 @@ export const handleAndStyleButtons = () => {
                     if (window.innerWidth >= 944) document.querySelector('#doctor-card').scrollIntoView(scrollOptions);
                     svgBackground.forEach(svg => svg.setAttribute('fill', '#5A58CF'));
             }
+            setTimeout(() => isclickEventActive = false, 1000);
         });
     });
 };

@@ -4,8 +4,12 @@ import { handleAndStyleButtons } from './handleButtons';
 import { handleScroll } from './handleScroll';
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
     setImages();
     handleAndStyleButtons();
     handleScroll();
 });
+
+
+

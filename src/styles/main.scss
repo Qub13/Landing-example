@@ -9,9 +9,9 @@ body {
   min-width: 375px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+//html {
+//  scroll-behavior: smooth;
+//}
 
 .main {
   height: 100%;
@@ -175,58 +175,6 @@ html {
       &:nth-child(5) {
         background-color: $pink-light;
       }
-
-      //#doctor-button {
-      //
-      //  background-color: $purple-light;
-      //
-      //
-      //  .button-image-div {
-      //    background-color: $purple;
-      //  }
-      //}
-      //
-      //#coach-button {
-      //
-      //  .inner-button-div {
-      //    background-color: $blue-light;
-      //  }
-      //
-      //  .button-image-div {
-      //    background-color: $blue;
-      //  }
-      //}
-      //
-      //#app-button {
-      //  .inner-button-div {
-      //    background-color: $green-light;
-      //  }
-      //
-      //  .button-image-div {
-      //    background-color: $green;
-      //  }
-      //}
-      //
-      //#medication-button {
-      //  .inner-button-div {
-      //    background-color: $orange-light;
-      //  }
-      //
-      //  .button-image-div {
-      //    background-color: $orange;
-      //  }
-      //}
-      //
-      //#community-button {
-      //
-      //  .inner-button-div {
-      //    background-color: $pink-light;
-      //  }
-      //
-      //  .button-image-div {
-      //    background-color: $pink;
-      //  }
-      //}
     }
 
 
@@ -247,7 +195,7 @@ html {
     justify-content: center;
     position: relative;
     margin-left: auto;
-    padding: 190px 40px 120px 0;
+    padding: clamp(220px, 15%, 400px) 40px clamp(220px, 15%, 400px) 0;
 
 
   }
@@ -492,9 +440,6 @@ html {
       }
 
       .card-background {
-        //position: absolute;
-        //bottom: -568px;
-
         transform: rotate(90deg);
         width: unset;
 
